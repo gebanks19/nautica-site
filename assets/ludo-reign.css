@@ -2,7 +2,12 @@
    645px, Manrope for text and Exo for headings and links. */
 * { box-sizing: border-box; }
 body { margin: 0; background: #fff; color: #111; font: 300 18px/1.4 Manrope, system-ui, sans-serif; letter-spacing: -0.1px; }
-main { max-width: 705px; margin: 0 auto; padding: 60px 30px 30px; }
+/* In place of the old "Grab It" wordmark: the crown and the game's name,
+   linking to the game's home page (the publisher is in the footer). */
+header.game { max-width: 705px; margin: 0 auto; padding: 28px 30px 0; }
+header.game a { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: #09241f; font: 400 22px/1.2 Exo, system-ui, sans-serif; }
+header.game img { width: 44px; height: 44px; border-radius: 10px; }
+main { max-width: 705px; margin: 0 auto; padding: 36px 30px 30px; }
 h1, h2 { font-family: Exo, system-ui, sans-serif; font-weight: 400; color: #09241f; }
 h1 { font-size: 34.4px; line-height: 1.125; margin: 0 0 19.2px; }
 h2 { font-size: 28px; line-height: 1.125; margin: 38px 0 0; }

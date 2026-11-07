@@ -29,7 +29,12 @@ Reign: Support, Privacy, Terms, Delete account; Alert! Cayman's support
 page: Privacy · Terms), with this line beneath them on every page:
 "Published by Grab It US LLC · 407 Lincoln Rd, Suite 6H, PMB 1470, Miami
 Beach, FL 33139 · *app*@nautica.ky". The pull request that added them shows
-a diff of each whole page, footer included, against its source. Each page sits in its own folder
+a diff of each whole page, footer included, against its source.
+
+Ludo Reign's pages on grabit.ky had a "Grab It" wordmark at the top,
+linking to the game's home page. As Glen decided, it isn't copied: each
+page instead has a header with the crown icon and "Ludo Reign", linking to
+`/ludo-reign/`. The publisher is named in the footer. Each page sits in its own folder
 (`privacy/index.html`), so both `/ludo-reign/privacy` and
 `/ludo-reign/privacy/` work.
 
