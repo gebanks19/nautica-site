@@ -1,0 +1,25 @@
+/* Ludo Reign's pages, matching their layout on the old site: one column of
+   645px, Manrope for text and Exo for headings and links. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: #111; font: 300 18px/1.4 Manrope, system-ui, sans-serif; letter-spacing: -0.1px; }
+/* In place of the old "Grab It" wordmark: the crown and the game's name,
+   linking to the game's home page (the publisher is in the footer). */
+header.game { max-width: 705px; margin: 0 auto; padding: 28px 30px 0; }
+header.game a { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: #09241f; font: 400 22px/1.2 Exo, system-ui, sans-serif; }
+header.game img { width: 44px; height: 44px; border-radius: 10px; }
+main { max-width: 705px; margin: 0 auto; padding: 36px 30px 30px; }
+h1, h2 { font-family: Exo, system-ui, sans-serif; font-weight: 400; color: #09241f; }
+h1 { font-size: 34.4px; line-height: 1.125; margin: 0 0 19.2px; }
+h2 { font-size: 28px; line-height: 1.125; margin: 38px 0 0; }
+p, ul, ol { margin: 19.2px 0 0; }
+ul, ol { padding-left: 1.5em; }
+li { margin-top: 8px; }
+strong { font-weight: 400; }
+a { font-family: Exo, system-ui, sans-serif; font-weight: 400; color: #111; }
+a { text-decoration: underline; }
+/* The original footer: a centred, wrapping row of underlined links. */
+footer.site-footer { max-width: 705px; margin: 19.2px auto 0; padding: 30px 30px 48px; color: #555; font-size: 15px; }
+footer.site-footer > div > div { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+footer.site-footer > div a { font: 300 20.76px/1.4 Manrope, system-ui, sans-serif; color: #111; display: inline-block; padding: 8px; }
+footer.site-footer p.publisher { margin: 24px 0 0; text-align: center; }
+footer.site-footer p.publisher a { color: #111; }

@@ -1,0 +1,19 @@
+/* Home page and Easy Days pages. System fonts only. */
+:root { --ink: #1e1e1e; --muted: #5b6460; --line: #e3e7e4; --accent: #1a744c; --bg: #ffffff; color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main, footer { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+main { padding-top: 40px; }
+h1 { font-size: 32px; line-height: 1.2; margin: 0 0 24px; }
+h2 { font-size: 22px; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+a { color: var(--accent); }
+ul.apps { list-style: none; padding: 0; margin: 0; }
+li.app { display: flex; gap: 18px; padding: 22px 0; border-top: 1px solid var(--line); }
+li.app img, li.app .noicon { border-radius: 16px; flex: none; width: 72px; height: 72px; }
+li.app .noicon { background: var(--line); }
+li.app h2 { margin: 0 0 4px; }
+ul.links { list-style: none; padding: 0; margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+p.email { color: var(--muted); font-size: 16px; }
+footer.site-footer { padding-top: 40px; padding-bottom: 48px; color: var(--muted); font-size: 14px; }
+footer.site-footer p { margin: 0; }
