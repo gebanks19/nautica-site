@@ -11,7 +11,9 @@ a { color: var(--accent); }
 ul.apps { list-style: none; padding: 0; margin: 0; }
 li.app { display: flex; gap: 18px; padding: 22px 0; border-top: 1px solid var(--line); }
 li.app img, li.app .noicon { border-radius: 16px; flex: none; width: 72px; height: 72px; }
+li.app .noicon { background: var(--line); }
 li.app h2 { margin: 0 0 4px; }
 ul.links { list-style: none; padding: 0; margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 6px 16px; }
 p.email { color: var(--muted); font-size: 16px; }
 footer.site-footer { padding-top: 40px; padding-bottom: 48px; color: var(--muted); font-size: 14px; }
+footer.site-footer p { margin: 0; }

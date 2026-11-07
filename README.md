@@ -7,7 +7,7 @@ as their approved originals do; nothing else is loaded from elsewhere.
 
 | Address | Page | Source |
 | - | - | - |
-| `/` | List of apps with links and support emails | New |
+| `/` | List of apps (Ludo Reign, Easy Days, Alert! Cayman, Pearlwake) with links and support emails | New |
 | `/ludo-reign/` | Ludo Reign | Copied from grabit.ky/ludo-reign/ |
 | `/ludo-reign/support/` | Support | Copied from grabit.ky/ludo-reign/support/ |
 | `/ludo-reign/privacy/` | Privacy policy | Copied from grabit.ky/ludo-reign/privacy/ |
@@ -18,21 +18,29 @@ as their approved originals do; nothing else is loaded from elsewhere.
 | `/alert-cayman/privacy/` | Privacy policy | Copied from alert.grabit.ky/privacy |
 | `/alert-cayman/terms/` | Terms | Copied from alert.grabit.ky/terms |
 | `/easy-days/privacy/` | Privacy policy | From easy-days `docs/RELEASE.md` (reviewed) |
-| `/easy-days/terms/` | Terms of service | **New**, adapted from Ludo Reign's terms; for Glen's review |
+| `/easy-days/terms/` | Terms of service | New, adapted from Ludo Reign's terms; approved by Glen on 7 November 2026 |
 | `/404.html` | Page not found | New |
 
 Copied pages are word for word. The only changes are email addresses
 (`@grabit.ky` → `@nautica.ky`), links that pointed at grabit.ky pages, the
-"last updated" date on Easy Days' privacy policy, and the footer on every
-page: "Published by Grab It US LLC · 407 Lincoln Rd, Suite 6H, PMB 1470,
-Miami Beach, FL 33139 · *app*@nautica.ky". The pull request that added them
-shows a diff of each against its source. Each page sits in its own folder
+"last updated" date on Easy Days' privacy policy, and the footer. Each
+footer keeps its original links, pointing at their new addresses (Ludo
+Reign: Support, Privacy, Terms, Delete account; Alert! Cayman's support
+page: Privacy · Terms), with this line beneath them on every page:
+"Published by Grab It US LLC · 407 Lincoln Rd, Suite 6H, PMB 1470, Miami
+Beach, FL 33139 · *app*@nautica.ky". The pull request that added them shows
+a diff of each whole page, footer included, against its source. Each page sits in its own folder
 (`privacy/index.html`), so both `/ludo-reign/privacy` and
 `/ludo-reign/privacy/` work.
 
-Ludo Reign is listed on the home page without an icon: its app still has
-Flutter's placeholder icon. Add `assets/icons/ludo-reign.png` (144 × 144)
-when it has a real one.
+Icons on the home page (144 × 144, shown at 72 px):
+- Ludo Reign: the "App icon" tile from its approved crown emblem B
+  (ludo-reign `docs/art/crown-emblem-chosen-b.png`), cropped, not redrawn.
+- Easy Days: its app icon (design A).
+- Alert! Cayman: its app icon.
+- Pearlwake: a plain grey placeholder tile. Its repository has no approved
+  icon yet; add `assets/icons/pearlwake.png` when it has one. Pearlwake has
+  no pages here yet, only its support email.
 
 No `app-ads.txt` yet: Ludo Reign has no real AdMob account. When it does,
 add the line AdMob gives, exactly, as `/app-ads.txt`.
@@ -118,6 +126,10 @@ delete: invitations and shared results already sent link to them.
 - [ ] Test each one both ways with Gmail: send to it from Gmail and see it
       arrive; reply from it and see the reply arrive in Gmail, not in spam.
 - [ ] Keep the old `@grabit.ky` addresses forwarding to the new ones.
+
+**Easy Days**
+- [ ] Update Easy Days' terms ("no purchases and no ads") and privacy
+      policy before the banner ad ships.
 
 **AdMob (Ludo Reign)**
 - [ ] When AdMob is set up for real: add its `app-ads.txt` line here, and

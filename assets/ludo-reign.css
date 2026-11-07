@@ -11,5 +11,10 @@ ul, ol { padding-left: 1.5em; }
 li { margin-top: 8px; }
 strong { font-weight: 400; }
 a { font-family: Exo, system-ui, sans-serif; font-weight: 400; color: #111; }
-footer.site-footer { max-width: 705px; margin: 0 auto; padding: 40px 30px 48px; color: #555; font-size: 15px; }
-footer.site-footer a { color: #111; }
+a { text-decoration: underline; }
+/* The original footer: a centred, wrapping row of underlined links. */
+footer.site-footer { max-width: 705px; margin: 19.2px auto 0; padding: 30px 30px 48px; color: #555; font-size: 15px; }
+footer.site-footer > div > div { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+footer.site-footer > div a { font: 300 20.76px/1.4 Manrope, system-ui, sans-serif; color: #111; display: inline-block; padding: 8px; }
+footer.site-footer p.publisher { margin: 24px 0 0; text-align: center; }
+footer.site-footer p.publisher a { color: #111; }
