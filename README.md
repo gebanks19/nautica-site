@@ -2,8 +2,8 @@
 
 Static pages (HTML and CSS only) for Grab It US LLC's apps, served by GitHub
 Pages at https://nautica.ky. No build step, trackers, cookies or scripts.
-The Ludo Reign and Alert! Cayman pages load their fonts from Google Fonts,
-as their approved originals do; nothing else is loaded from elsewhere.
+Every page loads only files from this site: fonts included, nothing is
+requested from another domain.
 
 | Address | Page | Source |
 | - | - | - |
@@ -49,6 +49,40 @@ Icons on the home page (144 × 144, shown at 72 px):
 
 No `app-ads.txt` yet: Ludo Reign has no real AdMob account. When it does,
 add the line AdMob gives, exactly, as `/app-ads.txt`.
+
+## Fonts
+
+The fonts are served from this site, in `assets/fonts/`, as WOFF2 files with
+their licences beside them. They are the files the pages loaded from Google
+Fonts until 7 November 2026, downloaded on that date from the addresses in
+Google Fonts' own stylesheets, Latin character set only (the pages are in
+English). The `@font-face` rules are at the top of `assets/ludo-reign.css`
+and `alert-cayman/site.css`, with the same weights and character ranges as
+Google's.
+
+| File | Font, weights used | Source | Licence | SHA-256 |
+| - | - | - | - | - |
+| `exo/exo-400-latin.woff2` | Exo 400 (Ludo Reign headings and links) | `fonts.gstatic.com/s/exo/v25/4UaZrEtFpBI4f1ZSIK9d4LjJ4lM3OwRmO3ws9Iq2uA.woff2` | SIL OFL 1.1 (`exo/OFL.txt`) | `7b9d22aabae35fb758f13a707c51e30cd56da2abccff84510154b122191979ec` |
+| `manrope/manrope-latin.woff2` | Manrope, variable: 300 and 400 (Ludo Reign text), 500, 700 and 800 (Alert! Cayman) | `fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSvfedN4.woff2` | SIL OFL 1.1 (`manrope/OFL.txt`) | `8bd97e6bbbc1f602a8f791530eed1064c9a357d5731bbc76e3fc587fb068728f` |
+| `yellowtail/yellowtail-400-latin.woff2` | Yellowtail 400 (the "Cayman" of Alert! Cayman's wordmark) | `fonts.gstatic.com/s/yellowtail/v25/OZpGg_pnoDtINPfRIlLohlvHwWL9f4k.woff2` | **Apache 2.0** (`yellowtail/LICENSE.txt`), not the OFL | `ac99e23948e0d1edcca4772e3c430272b63803b3c722f3a9ed04bb48560e3696` |
+| `exo/OFL.txt` | | `github.com/google/fonts`, `ofl/exo/OFL.txt` | | `1159ea72ed1f7e7541cea35a0dece48d2abb0317d7c70f75a482f94932382a77` |
+| `manrope/OFL.txt` | | `github.com/google/fonts`, `ofl/manrope/OFL.txt` | | `58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b` |
+| `yellowtail/LICENSE.txt` | | `github.com/google/fonts`, `apache/yellowtail/LICENSE.txt` | | `cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30` |
+
+"→" (used on a few pages) isn't in any of these fonts, on Google Fonts
+either, so it shows in the visitor's system font, as before.
+
+**What the original pages loaded:**
+- **Ludo Reign on grabit.ky** (WordPress, Twenty Twenty-Five theme): Manrope
+  from grabit.ky's own theme folder
+  (`/wp-content/themes/twentytwentyfive/assets/fonts/manrope/`), and no
+  Google Fonts stylesheet or preconnect. Their styles named Exo for headings
+  and links but nothing loaded it, so visitors without Exo installed saw a
+  fallback font there. These pages load Exo, as the design intends, so
+  their headings and links look slightly different from the grabit.ky
+  originals.
+- **Alert! Cayman on alert.grabit.ky:** Manrope (500, 700, 800) and
+  Yellowtail from Google Fonts, with preconnects to Google's font servers.
 
 ## DNS for nautica.ky (Glen, at Bluehost)
 
