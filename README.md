@@ -19,6 +19,7 @@ requested from another domain.
 | `/alert-cayman/terms/` | Terms | Copied from alert.grabit.ky/terms |
 | `/easy-days/privacy/` | Privacy policy | From easy-days `docs/RELEASE.md` (reviewed) |
 | `/easy-days/terms/` | Terms of service | New, adapted from Ludo Reign's terms; approved by Glen on 7 November 2026 |
+| `/fresh-quotes/privacy/` | Privacy policy | New, from fresh-quotes brief `FRESH_QUOTES_001` (B1); built like Easy Days' |
 | `/404.html` | Page not found | New |
 
 Copied pages are word for word. The only changes are email addresses
@@ -190,6 +191,11 @@ delete: invitations and shared results already sent link to them.
 - [ ] Easy Days (when its listing is created): contact email
       `easydays@nautica.ky`; website `https://nautica.ky`; privacy policy
       `https://nautica.ky/easy-days/privacy/`.
+
+- [ ] Fresh Quotes: forward `freshquotes@nautica.ky` to the inbox you read
+      and test it both ways. Then contact email `freshquotes@nautica.ky`;
+      privacy policy `https://nautica.ky/fresh-quotes/privacy/`. Don't
+      release the app update before that page is live.
 
 **Apple**
 - [ ] Register `ludoreign@nautica.ky` with Sign in with Apple's private
