@@ -44,6 +44,8 @@ Icons on the home page (144 × 144, shown at 72 px):
   (ludo-reign `docs/art/crown-emblem-chosen-b.png`), cropped, not redrawn.
 - Easy Days: its app icon (design A).
 - Alert! Cayman: its app icon.
+- Fresh Quotes: its app icon, scaled down from fresh-quotes
+  `app/src/main/ic_launcher-playstore.png` (brief `FRESH_QUOTES_002`, item 10).
 - Pearlwake: a plain grey placeholder tile. Its repository has no approved
   icon yet; add `assets/icons/pearlwake.png` when it has one. Pearlwake has
   no pages here yet, only its support email.
